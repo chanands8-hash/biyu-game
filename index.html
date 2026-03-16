@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>比喻小魔法：像像星大冒險</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <div class="app">
@@ -16,7 +16,21 @@
           <p>像像星大冒險</p>
         </div>
       </div>
-      <button id="soundBtn" class="ghost-btn" type="button">🔊 朗讀</button>
+
+      <div class="topbar-controls">
+        <label class="music-picker" for="bgmSelect">
+          <span>背景音樂</span>
+          <select id="bgmSelect">
+            <option value="">關閉</option>
+            <option value="assets/bgm/forest.mp3">森林</option>
+            <option value="assets/bgm/happy.mp3">輕快</option>
+            <option value="assets/bgm/dream.mp3">夢幻</option>
+          </select>
+        </label>
+
+        <button id="musicToggleBtn" class="ghost-btn" type="button">🎵 播放音樂</button>
+        <button id="soundBtn" class="ghost-btn" type="button">🔊 朗讀</button>
+      </div>
     </header>
 
     <main>
@@ -104,6 +118,6 @@
     </main>
   </div>
 
-  <script src="game.js?v=3"></script>
+  <script src="game.js?v=5"></script>
 </body>
 </html>

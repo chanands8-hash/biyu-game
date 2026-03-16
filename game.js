@@ -9,110 +9,70 @@ const worlds = [
         answer: "香蕉",
         sentence: "月亮像香蕉。",
         imageUrl: "assets/moon-banana.png",
-        options: [
-          { text: "香蕉" },
-          { text: "皮球" },
-          { text: "扇子" }
-        ]
+        options: [{ text: "香蕉" }, { text: "皮球" }, { text: "扇子" }]
       },
       {
         subject: "太陽",
         answer: "火球",
         sentence: "太陽像火球。",
         imageUrl: "assets/sun-fireball.png",
-        options: [
-          { text: "火球" },
-          { text: "積木" },
-          { text: "雨傘" }
-        ]
+        options: [{ text: "火球" }, { text: "積木" }, { text: "雨傘" }]
       },
       {
         subject: "白雲",
         answer: "棉花糖",
         sentence: "白雲像棉花糖。",
         imageUrl: "assets/white-cloud-cotton-candy.png",
-        options: [
-          { text: "棉花糖" },
-          { text: "刷子" },
-          { text: "石頭" }
-        ]
+        options: [{ text: "棉花糖" }, { text: "刷子" }, { text: "石頭" }]
       },
       {
         subject: "星星",
         answer: "鑽石",
         sentence: "星星像鑽石。",
         imageUrl: "assets/star-diamond.png",
-        options: [
-          { text: "鑽石" },
-          { text: "葉子" },
-          { text: "杯子" }
-        ]
+        options: [{ text: "鑽石" }, { text: "葉子" }, { text: "杯子" }]
       },
       {
         subject: "彩虹",
         answer: "滑梯",
         sentence: "彩虹像滑梯。",
         imageUrl: "assets/rainbow-slide.png",
-        options: [
-          { text: "滑梯" },
-          { text: "帽子" },
-          { text: "木匙" }
-        ]
+        options: [{ text: "滑梯" }, { text: "帽子" }, { text: "木匙" }]
       },
       {
         subject: "雨點",
         answer: "珍珠",
         sentence: "雨點像珍珠。",
         imageUrl: "assets/raindrop-pearl.png",
-        options: [
-          { text: "珍珠" },
-          { text: "香蕉" },
-          { text: "箱子" }
-        ]
+        options: [{ text: "珍珠" }, { text: "香蕉" }, { text: "箱子" }]
       },
       {
         subject: "閃電",
         answer: "樹枝",
         sentence: "閃電像樹枝。",
         imageUrl: "assets/lightning-branch.png",
-        options: [
-          { text: "樹枝" },
-          { text: "氣球" },
-          { text: "蛋糕" }
-        ]
+        options: [{ text: "樹枝" }, { text: "氣球" }, { text: "蛋糕" }]
       },
       {
         subject: "夕陽",
         answer: "橙子",
         sentence: "夕陽像橙子。",
         imageUrl: "assets/sunset-orange.png",
-        options: [
-          { text: "橙子" },
-          { text: "剪刀" },
-          { text: "積木" }
-        ]
+        options: [{ text: "橙子" }, { text: "剪刀" }, { text: "積木" }]
       },
       {
         subject: "雪花",
         answer: "小花",
         sentence: "雪花像小花。",
         imageUrl: "assets/snowflake-flower.png",
-        options: [
-          { text: "小花" },
-          { text: "皮球" },
-          { text: "勺子" }
-        ]
+        options: [{ text: "小花" }, { text: "皮球" }, { text: "勺子" }]
       },
       {
         subject: "霧",
         answer: "白紗",
         sentence: "霧像白紗。",
         imageUrl: "assets/fog-white-gauze.png",
-        options: [
-          { text: "白紗" },
-          { text: "木椅" },
-          { text: "蘋果" }
-        ]
+        options: [{ text: "白紗" }, { text: "木椅" }, { text: "蘋果" }]
       }
     ]
   },
@@ -126,110 +86,70 @@ const worlds = [
         answer: "小刷子",
         sentence: "刺蝟像小刷子。",
         imageUrl: "assets/hedgehog-small-brush.png",
-        options: [
-          { text: "小刷子" },
-          { text: "雨鞋" },
-          { text: "月餅" }
-        ]
+        options: [{ text: "小刷子" }, { text: "雨鞋" }, { text: "月餅" }]
       },
       {
         subject: "孔雀尾巴",
         answer: "扇子",
         sentence: "孔雀尾巴像扇子。",
         imageUrl: "assets/peacock-tail-fan.png",
-        options: [
-          { text: "扇子" },
-          { text: "皮箱" },
-          { text: "湯匙" }
-        ]
+        options: [{ text: "扇子" }, { text: "皮箱" }, { text: "湯匙" }]
       },
       {
         subject: "綿羊",
         answer: "棉花球",
         sentence: "綿羊像棉花球。",
         imageUrl: "assets/sheep-cotton-ball.png",
-        options: [
-          { text: "棉花球" },
-          { text: "香蕉" },
-          { text: "梯子" }
-        ]
+        options: [{ text: "棉花球" }, { text: "香蕉" }, { text: "梯子" }]
       },
       {
         subject: "小兔耳朵",
         answer: "葉子",
         sentence: "小兔耳朵像葉子。",
         imageUrl: "assets/rabbit-ears-leaf.png",
-        options: [
-          { text: "葉子" },
-          { text: "杯子" },
-          { text: "星星" }
-        ]
+        options: [{ text: "葉子" }, { text: "杯子" }, { text: "星星" }]
       },
       {
         subject: "小貓鬍子",
         answer: "細線",
         sentence: "小貓鬍子像細線。",
         imageUrl: "assets/cat-whiskers-lines.png",
-        options: [
-          { text: "細線" },
-          { text: "皮球" },
-          { text: "木盒" }
-        ]
+        options: [{ text: "細線" }, { text: "皮球" }, { text: "木盒" }]
       },
       {
         subject: "蝸牛殼",
         answer: "小房子",
         sentence: "蝸牛殼像小房子。",
         imageUrl: "assets/snail-shell-house.png",
-        options: [
-          { text: "小房子" },
-          { text: "鉛筆" },
-          { text: "雨點" }
-        ]
+        options: [{ text: "小房子" }, { text: "鉛筆" }, { text: "雨點" }]
       },
       {
         subject: "小魚",
         answer: "樹葉",
         sentence: "小魚像樹葉。",
         imageUrl: "assets/fish-leaf.png",
-        options: [
-          { text: "樹葉" },
-          { text: "蛋糕" },
-          { text: "剪刀" }
-        ]
+        options: [{ text: "樹葉" }, { text: "蛋糕" }, { text: "剪刀" }]
       },
       {
         subject: "長頸鹿脖子",
         answer: "長梯",
         sentence: "長頸鹿脖子像長梯。",
         imageUrl: "assets/giraffe-neck-ladder.png",
-        options: [
-          { text: "長梯" },
-          { text: "蘋果" },
-          { text: "杯蓋" }
-        ]
+        options: [{ text: "長梯" }, { text: "蘋果" }, { text: "杯蓋" }]
       },
       {
         subject: "鴨嘴",
         answer: "小鏟子",
         sentence: "鴨嘴像小鏟子。",
         imageUrl: "assets/duck-bill-shovel.png",
-        options: [
-          { text: "小鏟子" },
-          { text: "球鞋" },
-          { text: "蛋捲" }
-        ]
+        options: [{ text: "小鏟子" }, { text: "球鞋" }, { text: "蛋捲" }]
       },
       {
         subject: "毛毛蟲",
         answer: "小火車",
         sentence: "毛毛蟲像小火車。",
         imageUrl: "assets/caterpillar-train.png",
-        options: [
-          { text: "小火車" },
-          { text: "雨傘" },
-          { text: "書本" }
-        ]
+        options: [{ text: "小火車" }, { text: "雨傘" }, { text: "書本" }]
       }
     ]
   },
@@ -243,110 +163,70 @@ const worlds = [
         answer: "皮球",
         sentence: "西瓜像皮球。",
         imageUrl: "assets/watermelon-ball.png",
-        options: [
-          { text: "皮球" },
-          { text: "尺子" },
-          { text: "帽子" }
-        ]
+        options: [{ text: "皮球" }, { text: "尺子" }, { text: "帽子" }]
       },
       {
         subject: "香蕉",
         answer: "小船",
         sentence: "香蕉像小船。",
         imageUrl: "assets/banana-boat.png",
-        options: [
-          { text: "小船" },
-          { text: "剪刀" },
-          { text: "積木" }
-        ]
+        options: [{ text: "小船" }, { text: "剪刀" }, { text: "積木" }]
       },
       {
         subject: "麵條",
         answer: "長長的線",
         sentence: "麵條像長長的線。",
         imageUrl: "assets/noodles-long-lines.png",
-        options: [
-          { text: "長長的線" },
-          { text: "皮球" },
-          { text: "刷子" }
-        ]
+        options: [{ text: "長長的線" }, { text: "皮球" }, { text: "刷子" }]
       },
       {
         subject: "果凍",
         answer: "水晶",
         sentence: "果凍像水晶。",
         imageUrl: "assets/jelly-crystal.png",
-        options: [
-          { text: "水晶" },
-          { text: "木碗" },
-          { text: "葉子" }
-        ]
+        options: [{ text: "水晶" }, { text: "木碗" }, { text: "葉子" }]
       },
       {
         subject: "爆谷",
         answer: "小雲朵",
         sentence: "爆谷像小雲朵。",
         imageUrl: "assets/popcorn-cloud.png",
-        options: [
-          { text: "小雲朵" },
-          { text: "梯子" },
-          { text: "杯子" }
-        ]
+        options: [{ text: "小雲朵" }, { text: "梯子" }, { text: "杯子" }]
       },
       {
         subject: "燈籠",
         answer: "小太陽",
         sentence: "燈籠像小太陽。",
         imageUrl: "assets/lantern-little-sun.png",
-        options: [
-          { text: "小太陽" },
-          { text: "鉛筆" },
-          { text: "拖鞋" }
-        ]
+        options: [{ text: "小太陽" }, { text: "鉛筆" }, { text: "拖鞋" }]
       },
       {
         subject: "風扇",
         answer: "花",
         sentence: "風扇像花。",
         imageUrl: "assets/fan-flower.png",
-        options: [
-          { text: "花" },
-          { text: "書包" },
-          { text: "積木" }
-        ]
+        options: [{ text: "花" }, { text: "書包" }, { text: "積木" }]
       },
       {
         subject: "雨傘",
         answer: "蘑菇",
         sentence: "雨傘像蘑菇。",
         imageUrl: "assets/umbrella-mushroom.png",
-        options: [
-          { text: "蘑菇" },
-          { text: "剪刀" },
-          { text: "手套" }
-        ]
+        options: [{ text: "蘑菇" }, { text: "剪刀" }, { text: "手套" }]
       },
       {
         subject: "鈕扣",
         answer: "小月亮",
         sentence: "鈕扣像小月亮。",
         imageUrl: "assets/button-little-moon.png",
-        options: [
-          { text: "小月亮" },
-          { text: "椅子" },
-          { text: "畫筆" }
-        ]
+        options: [{ text: "小月亮" }, { text: "椅子" }, { text: "畫筆" }]
       },
       {
         subject: "氣球",
         answer: "大蘋果",
         sentence: "氣球像大蘋果。",
         imageUrl: "assets/balloon-big-apple.png",
-        options: [
-          { text: "大蘋果" },
-          { text: "尺子" },
-          { text: "刷牙杯" }
-        ]
+        options: [{ text: "大蘋果" }, { text: "尺子" }, { text: "刷牙杯" }]
       }
     ]
   }
@@ -369,6 +249,8 @@ const restartBtn = document.getElementById("restartBtn");
 const chooseWorldAgainBtn = document.getElementById("chooseWorldAgainBtn");
 const backWorldBtn = document.getElementById("backWorldBtn");
 const soundBtn = document.getElementById("soundBtn");
+const bgmSelect = document.getElementById("bgmSelect");
+const musicToggleBtn = document.getElementById("musicToggleBtn");
 
 const questionNo = document.getElementById("questionNo");
 const totalNo = document.getElementById("totalNo");
@@ -383,8 +265,17 @@ const feedbackEl = document.getElementById("feedback");
 const finalText = document.getElementById("finalText");
 const instruction = document.getElementById("instruction");
 
+const bgmAudio = new Audio();
+bgmAudio.loop = true;
+bgmAudio.volume = 0.35;
+bgmAudio.preload = "auto";
+
 startBtn.addEventListener("click", () => {
   showScreen("world");
+
+  if (bgmSelect.value && bgmAudio.paused) {
+    setBackgroundMusic(bgmSelect.value, true);
+  }
 });
 
 restartBtn.addEventListener("click", () => {
@@ -413,6 +304,18 @@ soundBtn.addEventListener("click", () => {
     speak(currentWorld.intro);
   }
 });
+
+bgmSelect.addEventListener("change", () => {
+  const selectedSrc = bgmSelect.value;
+  setBackgroundMusic(selectedSrc, true);
+});
+
+musicToggleBtn.addEventListener("click", () => {
+  toggleBackgroundMusic();
+});
+
+bgmAudio.addEventListener("play", updateMusicButton);
+bgmAudio.addEventListener("pause", updateMusicButton);
 
 document.querySelectorAll(".world-btn").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -552,6 +455,79 @@ function finishWorld() {
   speak(finalText.textContent);
 }
 
+function updateMusicButton() {
+  if (!bgmSelect.value) {
+    musicToggleBtn.textContent = "🎵 播放音樂";
+    return;
+  }
+
+  if (bgmAudio.paused) {
+    musicToggleBtn.textContent = "🎵 播放音樂";
+  } else {
+    musicToggleBtn.textContent = "⏸️ 暫停音樂";
+  }
+}
+
+function setBackgroundMusic(src, shouldPlay = false) {
+  if (!src) {
+    bgmAudio.pause();
+    bgmAudio.removeAttribute("src");
+    bgmAudio.load();
+    updateMusicButton();
+    return;
+  }
+
+  const currentSrc = bgmAudio.getAttribute("src");
+  const changed = currentSrc !== src;
+
+  if (changed) {
+    bgmAudio.src = src;
+    bgmAudio.setAttribute("src", src);
+    bgmAudio.load();
+  }
+
+  if (shouldPlay) {
+    bgmAudio.play()
+      .then(() => {
+        updateMusicButton();
+      })
+      .catch(() => {
+        updateMusicButton();
+      });
+  } else {
+    updateMusicButton();
+  }
+}
+
+function toggleBackgroundMusic() {
+  const selectedSrc = bgmSelect.value;
+
+  if (!selectedSrc) {
+    updateMusicButton();
+    return;
+  }
+
+  const currentSrc = bgmAudio.getAttribute("src");
+
+  if (!currentSrc) {
+    setBackgroundMusic(selectedSrc, true);
+    return;
+  }
+
+  if (bgmAudio.paused) {
+    bgmAudio.play()
+      .then(() => {
+        updateMusicButton();
+      })
+      .catch(() => {
+        updateMusicButton();
+      });
+  } else {
+    bgmAudio.pause();
+    updateMusicButton();
+  }
+}
+
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
 
@@ -576,3 +552,5 @@ function speak(text) {
 
   window.speechSynthesis.speak(utterance);
 }
+
+updateMusicButton();

@@ -46,14 +46,15 @@ img {
   display: block;
 }
 
-button {
+button,
+select {
   font: inherit;
 }
 
 .app {
   width: min(100%, 920px);
   margin: 0 auto;
-  padding: 10px 12px 14px;
+  padding: 10px 12px 18px;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -65,7 +66,6 @@ button {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  flex-shrink: 0;
 }
 
 .brand {
@@ -98,9 +98,37 @@ button {
   color: var(--text-soft);
 }
 
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.music-picker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffffd8;
+  padding: 8px 10px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.music-picker select {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  outline: none;
+  cursor: pointer;
+}
+
 main {
   flex: 1;
-  min-height: 0;
 }
 
 .screen {
@@ -179,9 +207,7 @@ main {
 .game-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   overflow: visible;
-  min-height: 0;
 }
 
 .character-row {
@@ -189,7 +215,6 @@ main {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  flex-shrink: 0;
 }
 
 .character {
@@ -220,7 +245,6 @@ main {
   border-radius: 22px;
   padding: 12px 12px 14px;
   margin-bottom: 12px;
-  flex-shrink: 0;
 }
 
 .question-image {
@@ -250,7 +274,6 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin-top: 4px;
-  flex-shrink: 0;
 }
 
 .option-btn {
@@ -303,7 +326,6 @@ main {
   font-weight: 800;
   margin-top: 8px;
   padding: 4px 6px 0;
-  flex-shrink: 0;
 }
 
 .feedback.good {
@@ -318,10 +340,11 @@ main {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 12px;
   flex-wrap: wrap;
-  flex-shrink: 0;
+  padding-top: 6px;
   padding-bottom: 4px;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .primary-btn,
@@ -381,4 +404,215 @@ main {
   border-radius: 22px;
   padding: 16px 12px;
   background: linear-gradient(180deg, #ffffff, #f6fbff);
-  box-shadow:
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 148px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.world-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px rgba(48, 64, 85, 0.14);
+}
+
+.world-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.world-name {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.world-desc {
+  font-size: 0.92rem;
+  color: var(--text-soft);
+  line-height: 1.45;
+}
+
+.end-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width: 820px) {
+  .app {
+    padding: 8px 10px 18px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  .topbar-controls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .music-picker {
+    width: 100%;
+    border-radius: 16px;
+    justify-content: space-between;
+  }
+
+  .brand-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    border-radius: 14px;
+  }
+
+  .brand h1 {
+    font-size: 1.35rem;
+  }
+
+  .brand p {
+    font-size: 0.9rem;
+  }
+
+  .hero-card,
+  .game-card {
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .status-row {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .badge {
+    padding: 7px 10px;
+    font-size: 0.86rem;
+  }
+
+  .progress-wrap {
+    height: 8px;
+    margin-bottom: 10px;
+  }
+
+  .character {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .instruction {
+    padding: 9px 12px;
+    font-size: 0.95rem;
+  }
+
+  .question-area {
+    padding: 10px 10px 12px;
+    margin-bottom: 10px;
+  }
+
+  .question-image {
+    max-width: 100%;
+    aspect-ratio: 16 / 7.8;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .question-text {
+    font-size: 1.2rem;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .option-btn {
+    min-height: 60px;
+    padding: 10px 12px;
+    font-size: 1.15rem;
+  }
+
+  .feedback {
+    min-height: 24px;
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+
+  .action-row {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(48, 64, 85, 0.08);
+    box-shadow: 0 -6px 16px rgba(48, 64, 85, 0.08);
+  }
+
+  .primary-btn,
+  .ghost-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .world-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .world-btn {
+    min-height: 104px;
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand {
+    min-width: 0;
+  }
+
+  .brand h1 {
+    font-size: 1.2rem;
+  }
+
+  .brand p {
+    font-size: 0.82rem;
+  }
+
+  .question-image {
+    aspect-ratio: 16 / 7.2;
+  }
+
+  .question-text {
+    font-size: 1.08rem;
+  }
+
+  .option-btn {
+    min-height: 54px;
+    font-size: 1.02rem;
+  }
+
+  .instruction {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+  }
+
+  .primary-btn,
+  .ghost-btn {
+    font-size: 0.88rem;
+    padding: 9px 10px;
+  }
+}
