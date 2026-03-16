@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>比喻小魔法：像像星大冒險</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">⭐</div>
+        <div>
+          <h1>比喻小魔法</h1>
+          <p>像像星大冒險</p>
+        </div>
+      </div>
+      <button id="soundBtn" class="ghost-btn" type="button">🔊 朗讀</button>
+    </header>
+
+    <main>
+      <section id="startScreen" class="screen active">
+        <div class="hero-card">
+          <div class="hero-art">🦊✨🐦</div>
+          <h2>歡迎來到像像星王國！</h2>
+          <p>幫小狐狸找回像像星，先選一個世界開始冒險吧！</p>
+          <button id="startBtn" class="primary-btn" type="button">開始遊戲</button>
+        </div>
+      </section>
+
+      <section id="worldScreen" class="screen">
+        <div class="hero-card">
+          <div class="hero-art">☁️🦊🏝️</div>
+          <h2>選擇世界</h2>
+          <p>每個世界有 10 題，按你喜歡的主題開始。</p>
+
+          <div class="world-grid">
+            <button class="world-btn" type="button" data-world-id="sky-village">
+              <span class="world-icon">☁️</span>
+              <span class="world-name">天空村</span>
+              <span class="world-desc">天空、天氣、自然景象</span>
+            </button>
+
+            <button class="world-btn" type="button" data-world-id="animal-valley">
+              <span class="world-icon">🦊</span>
+              <span class="world-name">動物谷</span>
+              <span class="world-desc">動物外形、身體特徵</span>
+            </button>
+
+            <button class="world-btn" type="button" data-world-id="living-island">
+              <span class="world-icon">🏝️</span>
+              <span class="world-name">生活島</span>
+              <span class="world-desc">食物、用品、日常物件</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="gameScreen" class="screen">
+        <div class="status-row">
+          <div class="badge"><span id="currentWorldName">天空村</span></div>
+          <div class="badge">第 <span id="questionNo">1</span> / <span id="totalNo">10</span> 關</div>
+          <div class="badge">星星：<span id="score">0</span></div>
+        </div>
+
+        <div class="progress-wrap">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div class="game-card">
+          <div class="character-row">
+            <div class="character">🦊</div>
+            <div id="instruction" class="instruction">請找出最像的東西</div>
+          </div>
+
+          <div class="question-area">
+            <img id="questionImage" class="question-image" src="assets/fallback.png" alt="題目圖片">
+            <div id="questionText" class="question-text">月亮像什麼？</div>
+          </div>
+
+          <div id="options" class="options"></div>
+
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+
+          <div class="action-row">
+            <button id="backWorldBtn" class="ghost-btn" type="button">返回世界</button>
+            <button id="nextBtn" class="primary-btn hidden" type="button">下一關</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="endScreen" class="screen">
+        <div class="hero-card">
+          <div class="hero-art">🌈⭐🎉</div>
+          <h2>你完成這個世界了！</h2>
+          <p id="finalText">你好叻！</p>
+          <div class="end-actions">
+            <button id="chooseWorldAgainBtn" class="ghost-btn" type="button">再選世界</button>
+            <button id="restartBtn" class="primary-btn" type="button">再玩一次</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
