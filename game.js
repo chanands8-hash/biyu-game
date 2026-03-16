@@ -264,6 +264,8 @@ const optionsEl = document.getElementById("options");
 const feedbackEl = document.getElementById("feedback");
 const finalText = document.getElementById("finalText");
 const instruction = document.getElementById("instruction");
+const imageOverlay = document.getElementById("imageOverlay");
+const questionArea = document.querySelector(".question-area");
 
 const bgmAudio = new Audio();
 bgmAudio.loop = true;
@@ -370,6 +372,12 @@ function renderQuestion() {
   feedbackEl.textContent = "";
   feedbackEl.className = "feedback";
 
+  imageOverlay.textContent = "";
+  imageOverlay.classList.add("hidden");
+  imageOverlay.classList.remove("show");
+
+  questionArea.classList.remove("shake");
+
   const q = currentQuestions[currentIndex];
   if (!q) return;
 
@@ -417,8 +425,14 @@ function checkAnswer(selected, selectedBtn) {
     score++;
     scoreEl.textContent = score;
     selectedBtn.classList.add("correct");
-    feedbackEl.textContent = `答對了！${q.sentence}`;
+
+    feedbackEl.textContent = "";
     feedbackEl.classList.add("good");
+
+    imageOverlay.textContent = q.sentence;
+    imageOverlay.classList.remove("hidden");
+    imageOverlay.classList.add("show");
+
     speak(`答對了。${q.sentence}`);
   } else {
     selectedBtn.classList.add("wrong");
@@ -429,8 +443,21 @@ function checkAnswer(selected, selectedBtn) {
       }
     });
 
+    imageOverlay.textContent = "";
+    imageOverlay.classList.add("hidden");
+    imageOverlay.classList.remove("show");
+
     feedbackEl.textContent = `再試下記住：${q.sentence}`;
     feedbackEl.classList.add("bad");
+
+    questionArea.classList.remove("shake");
+    void questionArea.offsetWidth;
+    questionArea.classList.add("shake");
+
+    setTimeout(() => {
+      questionArea.classList.remove("shake");
+    }, 400);
+
     speak(`再試下。${q.sentence}`);
   }
 

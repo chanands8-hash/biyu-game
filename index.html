@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>比喻小魔法：像像星大冒險</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <div class="app">
@@ -89,7 +89,20 @@
           </div>
 
           <div class="question-area">
-            <img id="questionImage" class="question-image" src="assets/fallback.png" alt="題目圖片">
+            <div class="question-image-wrap">
+              <img
+                id="questionImage"
+                class="question-image"
+                src="assets/fallback.png"
+                alt="題目圖片"
+              >
+              <div
+                id="imageOverlay"
+                class="image-overlay hidden"
+                aria-hidden="true"
+              ></div>
+            </div>
+
             <div id="questionText" class="question-text">月亮像什麼？</div>
           </div>
 
@@ -118,6 +131,6 @@
     </main>
   </div>
 
-  <script src="game.js?v=5"></script>
+  <script src="game.js?v=6"></script>
 </body>
 </html>
